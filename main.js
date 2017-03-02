@@ -64,9 +64,16 @@ function buyBrick(){
     document.getElementById("bricks-img-12").innerHTML="<img src='img/wall-row-95.png'/>";
   }
 
-  if(remaining == -1){
-    window.alert("You Won");
-    location.reload();
+  if(remaining == 99){
+    swal({
+      title: "You Won!",
+      text: "Thanks for helping Donald to build his wall",
+      imageUrl: "img/donald-like-pixel.png",
+      showConfirmButton: false
+    })
+    setTimeout(function(){
+       location.reload();
+    }, 5000);
   }
 };
 
