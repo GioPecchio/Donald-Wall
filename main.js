@@ -64,7 +64,7 @@ function buyBrick(){
     document.getElementById("bricks-img-12").innerHTML="<img src='img/wall-row-95.png'/>";
   }
 
-  if(remaining == 99){
+  if(remaining == 0){
     swal({
       title: "You Won!",
       text: "Thanks for helping Donald to build his wall",
